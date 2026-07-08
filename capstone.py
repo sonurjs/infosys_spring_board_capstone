@@ -7,7 +7,7 @@ st.set_page_config(
 )
 
 # Read Gemini API key from Streamlit Secrets
-genai.configure(api_key=st.secrets["AQ.Ab8RN6JXieVukoQtw-0owZs3FN2FimPCoz-2t4ZGFDUrr2FH-A"])
+genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 
 model = genai.GenerativeModel("gemini-2.5-flash")
 
