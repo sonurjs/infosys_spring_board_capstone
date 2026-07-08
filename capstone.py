@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1Wf_dynwztbCn5regwiOTTov_h2ZO2ZHJ
 """
 
-!pip install -q streamlit pyngrok google-generativeai
+pip install -q streamlit pyngrok google-generativeai
 
 # Commented out IPython magic to ensure Python compatibility.
 # %%writefile app.py
@@ -73,14 +73,14 @@ Original file is located at
 # 
 #         st.write(response.text)
 
-!nohup streamlit run app.py --server.port 8501 &
+nohup streamlit run app.py --server.port 8501 &
 
 import time
 time.sleep(10)
 
-!cat nohup.out
+cat nohup.out
 
-!pip install -q pyngrok
+pip install -q pyngrok
 
 from pyngrok import ngrok
 
